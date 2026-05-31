@@ -1,0 +1,341 @@
+/* =========================
+   SEHAR FATIMA PORTFOLIO
+   Premium AI Portfolio Theme
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#e2e8f0;
+    line-height:1.7;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+h1,h2,h3{
+    font-weight:700;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#60a5fa;
+    font-size:2.2rem;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* =========================
+   HERO
+========================= */
+
+#hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #2563eb
+    );
+}
+
+.hero-content{
+    max-width:900px;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4.5rem;
+    color:white;
+    margin-bottom:15px;
+}
+
+.hero-content h2{
+    color:#93c5fd;
+    font-size:1.8rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#cbd5e1;
+    font-size:1.1rem;
+    margin-bottom:35px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#1d4ed8;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+    padding:18px;
+}
+
+nav li{
+    margin:0 15px;
+}
+
+nav a{
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.education-card,
+.project-card,
+.skill-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+    padding:25px;
+
+    transition:0.3s;
+}
+
+.education-card:hover,
+.project-card:hover,
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card{
+    margin-bottom:20px;
+}
+
+.education-card h3{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.skill-card{
+    text-align:center;
+    font-weight:600;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-card{
+    margin-bottom:25px;
+}
+
+.project-card h3{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.project-card p{
+    margin-bottom:15px;
+}
+
+.project-card a{
+    color:#93c5fd;
+    font-weight:600;
+}
+
+.project-card a:hover{
+    color:white;
+}
+
+/* =========================
+   POSTERS
+========================= */
+
+.poster-image{
+    width:100%;
+    border-radius:15px;
+    margin-top:20px;
+    border:2px solid rgba(255,255,255,0.1);
+}
+
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
+#achievements ul{
+    list-style:none;
+}
+
+#achievements li{
+    background:rgba(255,255,255,0.05);
+
+    margin-bottom:15px;
+
+    padding:18px;
+
+    border-radius:12px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin-bottom:15px;
+}
+
+#contact a{
+    color:#93c5fd;
+}
+
+#contact a:hover{
+    color:white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    color:#94a3b8;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:10px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.8rem;
+}
+
+.hero-content h2{
+    font-size:1.2rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:12px;
+}
+
+section{
+    padding:60px 0;
+}
+
+}
